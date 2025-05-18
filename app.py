@@ -3,6 +3,7 @@ from chain import graph
 import streamlit as st
 import uuid
 
+
 SUGGESTED_QUESTIONS = [
     "¿Qué carga horaria total tiene la Carrera de Ing. en IA?",
     "¿Cuáles son los objetivos de la Licenciatura en Ciencias de Datos?",

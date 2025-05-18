@@ -33,3 +33,6 @@ y después vamos a tener cuidado de ejecutar todos los intalls con pip a través
 
 python pip install -r requirements.txt 
 
+Recordar usar el intérprete correcto en vscode
+>Python Seelect Interpeter
+

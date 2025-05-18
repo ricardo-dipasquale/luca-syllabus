@@ -5,8 +5,18 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_chroma import Chroma
 
+def read_secret(secret_name):
+    secret_path = f"/run/secrets/{secret_name}"
+    try:
+        with open(secret_path, 'r') as f:
+            return f.read().strip()
+    except FileNotFoundError:
+        return None
+
 if not os.environ.get("OPENAI_API_KEY"):
-  os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter API key for OpenAI: ")
+  os.environ["OPENAI_API_KEY"] = read_secret("OPENAI_API_KEY")
+  if not os.environ.get("OPENAI_API_KEY"):
+    os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter API key for OpenAI: ")
 
 llm_model="gpt-4o-mini"
 embedding_model="text-embedding-3-large"

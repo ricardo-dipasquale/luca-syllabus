@@ -36,3 +36,7 @@ python pip install -r requirements.txt
 Recordar usar el intérprete correcto en vscode
 >Python Seelect Interpeter
 
+Docker:
+docker build -t luca-syllabus .
+docker run -p 2000:2000 luca-syllabus
+

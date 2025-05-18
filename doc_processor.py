@@ -42,3 +42,5 @@ ids = vector_store.add_documents(documents=all_splits)
 embedding = embeddings.embed_query("Qué materias hay en el primer año / primer cuatrimestre de la Licenciatura en Ciencias de Datos?")
 results = vector_store.similarity_search_by_vector(embedding)
 print(results[0])
+
+print ("Finalizado")

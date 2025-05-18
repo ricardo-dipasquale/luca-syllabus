@@ -8,9 +8,9 @@ SUGGESTED_QUESTIONS = [
     "¿Qué carga horaria total tiene la Carrera de Ing. en IA?",
     "¿Cuáles son los objetivos de la Licenciatura en Ciencias de Datos?",
     "¿Cuál es el año con más carga horaria de la Lic. en Ciencias de Datos?",
-    "¿Cuál es el perfil profesional de un egresado en IA?",
+    "¿Cuál es el perfil profesional de un egresado de Ing. en IA?",
     "¿Qué diferencia hay entre Ciencia de Datos e Ingeniería en IA?",
-    "¿Cómo es el cursado para quienes trabajan?",
+    "¿Quiénes son los profesores de las materias relacionadas con Bases de Datos del Track Digital?",
 ]
 
 st.set_page_config(page_title="Luca - Asistente UCA Track Digital", page_icon="🤖")

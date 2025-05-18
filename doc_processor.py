@@ -24,7 +24,7 @@ print(f"Total de documentos cargados: {len(all_docs)}")
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500, chunk_overlap=120, add_start_index=True
+    chunk_size=5000, chunk_overlap=2000, add_start_index=True
 )
 all_splits = text_splitter.split_documents(all_docs)
 

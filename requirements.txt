@@ -1,0 +1,10 @@
+langchain-text-splitters 
+langchain-community 
+langgraph
+langchain[openai]
+langchain-openai
+beautifulsoup4
+uv
+langchain-chroma>=0.1.2
+pypdf
+streamlit

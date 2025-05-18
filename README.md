@@ -39,4 +39,4 @@ Recordar usar el intérprete correcto en vscode
 Docker:
 docker build -t luca-syllabus .
 docker run -p 2000:2000 luca-syllabus
-
+docker pull rdipasqualeuca/luca-syllabus:latest

@@ -40,7 +40,7 @@ Recordar usar el intérprete correcto en vscode
 Docker:
 ```
 docker build -t luca-syllabus .
-docker run -p 2000:2000 luca-syllabus
+docker run -p 2000:2000 -e OPENAI_API_KEY="xxxxx" rdipasqualeuca/luca-syllabus
 docker pull rdipasqualeuca/luca-syllabus:latest
 ```
 
@@ -51,5 +51,5 @@ echo $OPENAI_API_KEY
 
 Run:
 ```
-docker run -p 2000:2000 -e OPENAI_API_KEY rdipasqualeuca/luca-syllabus
+docker run -p 2000:2000 -e OPENAI_API_KEY="xxxxx" rdipasqualeuca/luca-syllabus
 ```
